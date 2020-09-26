@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>   
+        <link href="css\index.css" rel='stylesheet' type='text/css'>  
+        <link href="css\header.css" rel="stylesheet" type="text/css">
+</head>
+<body>    
+
+  <div class="header">
+      <button id ="topButtons1" >Sign Up</button>
+      <button id ="topButtons2" >Sign In</button>
+      <a id="pageTitle" class="logo-title">ScriBBler</a>
+      <p class="middleText">Explore Imagine Create</p>
+  </div> 
+  <div id = "postButtons">
+      <p align = "center">
+          <a href = "html/bloglist.html">
+            <button class= "Middle-Button">
+              All Posts 
+            </button>
+          </a>
+          <button class = "Middle-Button" id = "Create-Post-Modal">
+            Create Post 
+          </button>
+      </p>
+  </div>
+        
+<div id="myModal" class="modal">                  
+  <div class="modal-content">
+    <span class="close">
+      &times;
+    </span>
+    <p>
+      <h1>Get Started</h1>
+      <hr class = "hr-Shade">
+      <form class = "form-style">
+      <label>Full Name</label><br>
+      <input type="text" placeholder="Enter Full Name" required> <br>           
+      <label>Username</label><br>
+      <input type="text" placeholder="Enter Username" required><br>                
+      <label>Password </label><br>
+      <input type="password" placeholder="Enter Password" required><br>                  
+      <label>Confirm Password</label><br>
+      <input type="password" placeholder="Confirm Password" required><br>                 
+      <button class = "Sign-Up-Button">Sign Up</button>
+      </form>       
+    </p>
+  </div>
+</div>
+          <!-- For Sign In -->
+<div id="myModal2" class="modal">                  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>
+      <h1>Welcome Back !</h1>
+      <hr class = "hr-Shade">
+      <form class = "form-style">   
+        <label>Username</label> <br>
+        <input type="text" placeholder="Enter Username" required>
+        <label>Password</label> <br>
+        <input type="password" placeholder="Enter Password" required> <br>
+        <button class = "Sign-Up-Button">
+          Sign In
+        </button><br>
+        Not a member ? <a id = "linking">Sign Up</a>
+      </form>       
+    </p>
+  </div>
+</div>
+<div id="myModal3" class="modal">                  
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>
+        <h2><pre>    Create Your Post</pre></h2>
+        <hr class = "hr-shade">
+        <h4>Title</h4>
+        <input type="text" placeholder="Enter Title Here">
+        <h4>Content</h4>
+        <textarea name="Content" id="textAreaViaModal" cols="35" rows="10"></textarea>  
+        <button class = sign-up-button>Create</button>    
+      </p>
+    </div>
+  </div>
+<script src = "js\index.js"></script>
+
+</body>
+</html>
